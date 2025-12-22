@@ -16,9 +16,23 @@ $("li").odd().css("background-color","yellow")
 $("li").css("padding","10px")
 
 $(document).ready(function(){
-    $("#addButton").click(function(){
+    $("#dduBtn").click(function(){
         $(".deplist ul").append("<li>Mechanical Engineering</li>")
     })
+    $('#removeBtn').click(function(){
+        $('.deplist ul li').first().fadeOut(500,function(){
+            $(this).first().remove();
+        })
+})
+ $('#removeBtn').mouseleave(function(){
+        $('.deplist ul li').first().fadeOut(500,function(){
+            $(this).last().remove();
+        })
+})
+$('#removeBtn').mouseenter(function(){
+        $(".deplist ul").append("<li>Elec Engineering</li>")
+    })
+    
     $(".deplist ul")
      .on("mouseenter","li",function(){$(this).css("color","red");
      })

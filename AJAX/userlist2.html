@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userList example</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container gap-3 justify-content-center">
+        <h1>users</h1>
+        <button id="load" class="btn bg-info mt-2">Load Users by XML</button>
+        <button id="load2" class="btn bg-primary text-light mt-2">Load Users by fetch </button>
+        <button id="load3" class="btn bg-warning text-light mt-2">Load Users by fetch Await </button>
+        <button id="load4" class="btn bg-secondary text-light mt-2">Load Users by Ajax </button>
+        <div class="users">Loading</div>
+    </div>
+    <div class="container">
+        <input class="p-2 bg-info-subtle rounded " type="text" id="numcheck" placeholder="enter valid number">
+        <span id="msg"></span>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="ajaxforuserlist2.js"></script>
+</body>
+</html>
